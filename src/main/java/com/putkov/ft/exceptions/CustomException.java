@@ -1,0 +1,17 @@
+package com.putkov.ft.exceptions;
+
+public class CustomException extends Exception{
+    public CustomException(){
+        super();
+    }
+
+    public CustomException(String message){
+        super(message);
+    }
+    public CustomException(Throwable reason){
+        super(reason);
+    }
+    public CustomException(Throwable reason, String message){
+        super(message, reason);
+    }
+}
