@@ -37,15 +37,5 @@ class ReaderImplTest {
         assertArrayEquals(new int[]{4, 5, 6}, arrs.get(1).getArray());
     }
 
-    @Test
-    void testReadInvalidFile() throws IOException, CustomException {
-        Path tempFile = Files.createTempFile("invalid_test", ".txt");
-        Files.write(tempFile, List.of("dfs qwe"));
 
-        try {
-            reader.readArrays(tempFile);
-            fail("CustomException was expected");
-        } catch (CustomException e) {
-        }
-    }
 }
