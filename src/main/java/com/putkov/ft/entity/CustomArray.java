@@ -1,15 +1,12 @@
 package com.putkov.ft.entity;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-
 import java.util.Arrays;
 
-public class CustomArr {
+public class CustomArray {
         private long id;
         private final int[] array;
 
-    public CustomArr(long id, int[] array) {
+    public CustomArray(long id, int[] array) {
         this.id = id;
         this.array = array.clone();
     }
@@ -38,7 +35,7 @@ public class CustomArr {
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
 
-        CustomArr that = (CustomArr) o;
+        CustomArray that = (CustomArray) o;
         return id == that.id && Arrays.equals(array, that.array);
     }
 

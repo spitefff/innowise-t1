@@ -1,5 +1,5 @@
 package com.putkov.ft.validator;
 
-public interface CustomArrValidator {
+public interface CustomArrayValidator {
     boolean isValid(String line);
 }

@@ -2,7 +2,7 @@ package com.putkov.ft.validator;
 
 import java.util.regex.Pattern;
 
-public class CustomArrValidatorImpl implements  CustomArrValidator{
+public class CustomArrayValidatorImpl implements CustomArrayValidator {
     private static final Pattern VALID_PATTERN = Pattern.compile("[0-9\\s,;\\-]+$");
     @Override
     public boolean isValid(String line) {
